@@ -9,7 +9,7 @@ while True:
         print(saldo)
 
     elif comando == 2:
-        saque = float(input("quanto voce quer sacar"))
+        saque = float(input("quanto você quer sacar?"))
         if saldo -  saque >= 0:
             saldo -= saque
         else:
@@ -20,4 +20,7 @@ while True:
 
     elif comando == 4:
         print("qual jogo deseja apostar?\n1. palmeiras x guarani\n2. são paulo x cruzeiro\n3. flamengo x forteleza\n4. cuiabá x são paulo")
-        break
+        comando_aposta = int(input('comando '))
+        if comando_aposta == 1:
+            print(input("quanto deseja apostar?"))
+            if saldo - 
